@@ -1,0 +1,308 @@
+/* Name: Ethan EG */
+/* Date: 2023-03-12 */
+/* Section: 310 */
+/* Lab: assignment 1 */
+/* File: Stylesheet.css */
+
+/* removes html5 automatic padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #14283d;
+    z-index: 1;
+}
+
+/* underline when hover */
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Style the name */
+.name {
+    font-family: 'Monotype Corsiva', Cursive;
+    font-size: 34px;
+    margin: 0;
+}
+/* Style the navigation links */
+nav {
+    display: flex;
+    align-items: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Palatino Linotype', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Style whole website */
+body {
+    background-color: #162d46;
+    height: 100%; /* Set a height for the body */
+    overflow-y: scroll; /* Add scroll ability */
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+/* portrait picture on home page */
+.Portrait {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-top: 105px;
+}
+
+/* portrait containor on home page */
+.portrait-container {
+    position: relative;
+    width: 40%;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+img[src="Portrait.jpg"] {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* yellow/orange background behind portrait picture on homepage */
+.yellow-box, .orange-box, .yellow-box2, .orange-box2 {
+    position: absolute;
+    height: calc(100% - 30px);
+    width: calc(100% - 30px);
+    border-radius: 10px;
+}
+.yellow-box {
+    background-color: rgb(218, 218, 64);
+    z-index: -1;
+    bottom: -15px;
+    left: -15px;
+}
+.orange-box {
+    background-color: #CBCBD4;
+    z-index: -1;
+    top: -15px;
+    right: -15px;
+}
+.yellow-box2 {
+    background-color: rgb(218, 218, 64);
+    z-index: -2;
+    bottom: -15px;
+    right: -15px;
+}
+.orange-box2 {
+    background-color: #CBCBD4;
+    z-index: -2;
+    top: -15px;
+    left: -15px;
+}
+
+/* text beside portrait image on home page */
+.image-text {
+    flex: 1;
+    text-align: center;
+}
+h1 {
+    font-size: 9vw;
+    font-weight: bold;
+    color: #bdbdbd;
+    margin-bottom: 5px;
+}
+h3 {
+    font-size: 3vw;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* about me section below portrait on home page */
+.below {
+    background-color: #14283d;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.about-me-box img[src="Climb.png"]{
+    float: right;
+    margin-top: 40px;
+    margin-right:50px;
+    max-width: 25%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-me-box {
+    text-align: center;
+}
+
+.about-me-title {
+    font-size: 5vw;
+    color: #ffffff;
+    line-height: 0.5;
+    margin: 40px 0 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.about-me-text {
+    font-size: 2vw;
+    color: #ffffff;
+    line-height: 1.5;
+    margin: 20px 20px 20px 20px;
+    text-align: left;
+}
+
+.about-me-text a {
+    color: greenyellow;
+}
+
+/* footer styling */
+.footer {
+    background-color: #14283d;
+    margin-top: auto;
+    height:5%;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer p {
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 20px;
+    display: inline;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    float: right;
+    padding-right: 20px;
+}
+
+/* underline when hover */
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* resume embed styling */
+.resumeEmbed{
+    padding:70px 30px 30px 30px;
+}
+
+.resumeE{
+    width: 100%;
+}
+
+/* lab download image previews */
+.lab1 img[src="Java_lab5_picture.PNG"], .lab2 img[src="Java_Assignment1_picture.PNG"]{
+    float:left;
+    max-width: 54%;
+    margin:5px;
+    padding-right:5px;
+}
+
+.lab1 img[src="Java_lab5_picture.PNG"]{
+    margin-left:30px;
+}
+
+.labs{
+    display: flex;
+    text-align:center;
+}
+
+.lab1 p , .lab2 p {
+    font-size: 1.8vw;
+    color: #ffffff;
+    line-height: 1.3;
+    margin: 5px;
+    text-align: left;
+
+}
+
+.lab2 p {
+    margin-right:30px;
+}
+
+/* search bar and buttons */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding-top:60px;
+}
+
+.search-box {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-button {
+    margin-left: 10px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #3e8e41;
+}
+
+
+/* css below is for the courses page - courses */
+
+.course-list p, .course-list h4, .course-list h5{
+    color: #ffffff;
+    margin: 20px ;
+    text-align:center;
+}
+
+.course-list p{
+    font-size: 1.2vw;
+}
+
+.course-list img{
+    margin-left:20px;
+    border-radius:15px;
+    max-width:20%;
+}
+
+.course-box{
+    display:flex;
+    align-items: center;
+    background-color: #162d46;
+    margin-bottom:30px;
+}
